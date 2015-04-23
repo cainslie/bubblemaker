@@ -1,0 +1,24 @@
+﻿extends layout
+
+block content
+  .jumbotron
+    h1 Durban Undersea Club
+    p.lead Welcome to the DUC self service dive booking page.
+    p
+  .row
+  p Upcoming dives
+  .row
+  table(style='width:100%')
+    thead
+      tr
+        th(style='width:25%') Dive Site
+        th(style='width:25%') Description
+        th(style='width:25%') Depth
+        th(style='width:25%') Requirement
+    tbody
+      each item in spots
+        tr
+          td= item.spotName
+          td= item.spotDescription
+          td= item.spotDepth
+          td= item.spotRequirement
