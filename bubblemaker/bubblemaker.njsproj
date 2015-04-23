@@ -60,12 +60,8 @@
     <Content Include="public\stylesheets\bootstrap.min.css" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
-    <Content Include="views\booking.jade" />
-    <Content Include="views\contact.jade" />
-    <Content Include="views\about.jade" />
-    <Content Include="views\diveSpots.jade" />
-    <Content Include="views\index.jade" />
-    <Content Include="views\layout.jade" />
+    <Content Include="views\index.handlebars" />
+    <Content Include="views\layouts\main.handlebars" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
@@ -75,6 +71,7 @@
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
+    <Folder Include="views\layouts\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

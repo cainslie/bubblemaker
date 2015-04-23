@@ -45,23 +45,23 @@ documents.divesDoc = {
 
 exports.index = function (req, res) {
     db.dives.find({}, function (err, doc) {
-        console.log(doc);
+        //console.log(doc);
         res.render('index', { dives : doc });
     });
 };
 
 //db.dives.insert(documents.divesDoc);
 
-exports.diveSpots = function (req, res) {
-    db.spots.find({}, function (err, doc) {
-        console.log(doc);
-        res.render('diveSpots', { spots : doc });
-    });
-};
+//exports.diveSpots = function (req, res) {
+//    db.spots.find({}, function (err, doc) {
+//        console.log(doc);
+//        res.render('diveSpots', { spots : doc });
+//    });
+//};
 
-exports.booking = function (req, res) {
-      res.render('booking');
-};
+//exports.booking = function (req, res) {
+//      res.render('booking');
+//};
 
 //exports.contact = function (req, res) {
 //    res.render('contact', { title: 'Contact', year: new Date().getFullYear(), message: 'Your contact page.' });
